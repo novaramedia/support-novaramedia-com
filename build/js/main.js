@@ -28,23 +28,35 @@ jQuery(document).ready(function($) {
       }
     }), 15000);
   });
+
   layout();
   $(window).resize(function() {
     return layout();
   });
+
   $('.js-toggle-drawer').click(function() {
     return $('#drawer-main').slideToggle(animationLength);
   });
+
   $('.js-toggle-tags').click(function() {
     return $('#drawer-tags').slideToggle(animationLength);
   });
-  return $('.masonry').each(function() {
-    var t;
-    t = $(this);
+
+  $('.masonry').each(function() {
+    var t = $(this);
     return $(this).imagesLoaded(function() {
       return t.masonry();
     });
   });
+
+  // FORMS
+
+  $('.support-form-slider').on('input', function() {
+    var target = $(this).parent().siblings('.support-form-value-holder').children('.support-form-value');
+    target.html(this.value);
+  });
+
+
 });
 
 layout = function() {

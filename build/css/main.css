@@ -1395,6 +1395,40 @@ img {
   height: 55px;
   width: 55px;
 }
+#main-content {
+  font-size: 2em;
+  line-height: 1.4em;
+  font-weight: bold;
+}
+.list li {
+  list-style: circle inside;
+  padding-left: 12px;
+}
+.support-form-holder {
+  box-sizing: border-box;
+  padding: 24px;
+  text-align: center;
+  border: 2px solid #fff;
+}
+.support-form-value-holder {
+  width: 20%;
+  float: left;
+}
+.support-form-slider-holder {
+  width: 75%;
+  float: right;
+}
+.support-form-slider {
+  width: 65%;
+  margin-right: 2%;
+}
+.support-form-submit {
+  width: 12%;
+  margin-left: 2%;
+  background-color: #fff;
+  color: #f00;
+  border: 0;
+}
 @media screen and (max-width: 912px) {
   #pagination {
     margin: 24px 0;

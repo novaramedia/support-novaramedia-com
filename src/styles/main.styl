@@ -1,6 +1,8 @@
 @import "resets"
 @import "novara"
 
+$font-leading-basic = 1.4em
+
 #header
   background-image: url(/img/working/marble-1400.jpg)
 
@@ -8,6 +10,42 @@
   height: 55px
   width: 55px
 
+#main-content
+  font-size: 2em
+  line-height: $font-leading-basic
+  font-weight: bold
+
+.list
+  li
+    list-style: circle inside
+    padding-left: $margin-tiny
+
+// INPUT FORMS
+
+.support-form-holder
+  box-sizing: border-box
+  padding: $margin-small
+  text-align: center
+  border: 2px solid white
+
+.support-form-value-holder
+  width: 20%
+  float: left
+
+.support-form-slider-holder
+  width: 75%
+  float: right
+
+.support-form-slider
+  width: 65%
+  margin-right: 2%
+
+.support-form-submit
+  width: 12%
+  margin-left: 2%
+  background-color: white
+  color: $red
+  border: 0
 
 
 @media screen and (max-width: 912px)
