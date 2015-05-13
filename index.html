@@ -24,12 +24,12 @@
         <meta property="og:image" content="" />
         <meta name="twitter:image:src" content="">
 
-        <link rel="icon" href="/img/favicon.png">
-        <link rel="shortcut" href="/img/favicon.ico">
-        <link rel="apple-touch-icon" href="/img/favicon-touch.png">
-        <link rel="apple-touch-icon" sizes="114x114" href="/img/favicon.png">
+        <link rel="icon" href="build/img/favicon.png">
+        <link rel="shortcut" href="build/img/favicon.ico">
+        <link rel="apple-touch-icon" href="build/img/favicon-touch.png">
+        <link rel="apple-touch-icon" sizes="114x114" href="build/img/favicon.png">
 
-        <link rel="stylesheet" href="css/main.min.css">
+        <link rel="stylesheet" href="build/css/main.min.css">
 
         <!--[if lt IE 9]>
             <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
@@ -52,13 +52,11 @@
               <div class="col col12">
                 <nav id="header-drawer-toggle" class="u-inline-block u-pointer js-toggle-drawer"><span class="genericon genericon-menu"></span></nav>
                 <ul id="header-top-menu" class="u-inline-block u-inline-list">
-                  <li><a href="<?php echo home_url('category/tv/'); ?>">&#8605; TV</a></li>
-                  <li><a href="<?php echo home_url('category/fm/'); ?>">&#8605; FM</a></li>
-                  <li><a href="http://wire.novaramedia.com">&#8605; Wire</a>
+                  <li>&#8605; Support Novara Media</li>
                 </ul>
               </div>
               <div class="col col12 u-align-right">
-                <a href="<?php echo home_url(); ?>">
+                <a href="http://novaramedia.com/">
                   <svg id="logo-nm" xmlns="http://www.w3.org/2000/svg" width="894.125" height="728.168" viewBox="0 0 894.125 728.168"><path fill="#fff" d="M535.117 0h-176.109v285.642l-171.388-285.642h-167.299v582.534h176.117v-252.48l172.148 252.48h156.953l172.149-252.48v252.48h176.116v-582.534h-167.291l-171.396 285.642v-285.642m-379.321 198.297v343.594h-94.832v-501.248h103.649l235.037 391.732v-391.732h94.825v501.249h-104.404l-234.275-343.595zm738.329 529.871h-894.125v-81.283h894.125v81.283z"/></svg>
                 </a>
               </div>
@@ -71,8 +69,10 @@
             <div class="row">
               <div class="col col8">
                 <ul class="u-inline-list">
+                  <li><a href="http://novaramedia.com/category/tv/">TV</a></li>
+                  <li><a href="http://novaramedia.com/category/fm/">FM</a></li>
+                  <li><a href="http://wire.novaramedia.com">Wire</a>
                   <li><a href="http://novaramedia.com/about">About</a></li>
-                  <li><a class="u-pointer js-toggle-tags">Tags</a></li>
                 </ul>
               </div>
                <div class="col col8">
@@ -156,6 +156,7 @@
                 <ul class="list">
                   <li>Pay contributors to Novara Wire for their efforts.</li>
                   <li>Cover our ongoing costs: hosting and so on.</li>
+                  <li>Buy new equipment to improve the quality and quantity of our content</li>
                 </ul>
                 <p>And hopefully a lot more</p>
               </div>
@@ -200,7 +201,7 @@
           <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
           <script>window.jQuery || document.write('<script src="/js/jquery.min.js"><\/script>')</script>
 <!--           <script src="js/lib.js"></script> -->
-          <script src="js/main.js"></script>
+          <script src="build/js/main.js"></script>
         </section>
     </body>
 </html>

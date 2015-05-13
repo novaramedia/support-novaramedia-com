@@ -5,6 +5,7 @@ var gulp = require('gulp'),
     rename = require('gulp-rename'),
     concat = require('gulp-concat'),
     notify = require('gulp-notify'),
+    plumber = require('gulp-plumber'),
     util = require('gulp-util'),
 
     stylus = require('gulp-stylus'),
@@ -36,14 +37,14 @@ function errorNotify(error){
 /* SERVER */
 gulp.task('connect', function() {
   connect.server({
-    root: 'build',
+    root: '.',
     port: 8008,
-    livereload: true
+    livereload: false
   });
 });
 
 gulp.task('html', function () {
-  gulp.src('./build/*.html')
+  gulp.src('index.html')
     .pipe(connect.reload())
     .pipe(notify({ message: 'HTML task complete' }));
 });
@@ -51,6 +52,7 @@ gulp.task('html', function () {
 /* STYLES */
 gulp.task('styles', function() {
   return gulp.src('src/styles/main.styl')
+    .pipe(plumber())
     .pipe(stylus())
     .on('error', errorNotify)
     .pipe(autoprefixer('last 2 version', 'safari 5', 'ie 8', 'ie 9', 'opera 12.1', 'ios 6', 'android 4'))
@@ -119,8 +121,7 @@ gulp.task('watch', function() {
   gulp.watch('src/scripts/main.js', ['script']);
   gulp.watch('src/libs/*.js', ['lib']);
   gulp.watch('src/images/*.*', ['images']);
-  gulp.watch('src/fonts/*.*', ['fonts']);
-  gulp.watch(['./build/*.html'], ['html']);
+  gulp.watch('index.html', ['html']);
 
 });
 

@@ -1389,7 +1389,7 @@ img {
   }
 }
 #header {
-  background-image: url("/img/working/marble-1400.jpg");
+  background-image: url("../img/working/marble-1400.jpg");
 }
 #logo-nm {
   height: 55px;
@@ -1399,6 +1399,12 @@ img {
   font-size: 2em;
   line-height: 1.4em;
   font-weight: bold;
+  margin-top: 24px;
+}
+#main-content .col24 {
+  max-width: 1002px;
+  margin: 0 auto;
+  float: none;
 }
 .list li {
   list-style: circle inside;
