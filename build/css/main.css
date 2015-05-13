@@ -1410,6 +1410,27 @@ img {
   list-style: circle inside;
   padding-left: 12px;
 }
+.video-holder {
+  position: relative;
+  padding-bottom: 56.25%;
+  padding-top: 25px;
+  height: 0;
+  margin-bottom: 24px;
+}
+.video-holder iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+#mce-EMAIL {
+  padding: 12px;
+  width: 75%;
+}
+.support-form-submit {
+  padding: 12px;
+}
 .support-form-holder {
   box-sizing: border-box;
   padding: 24px;
