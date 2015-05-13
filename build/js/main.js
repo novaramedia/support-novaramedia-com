@@ -29,10 +29,12 @@ jQuery(document).ready(function($) {
     }), 15000);
   });
 
+/*
   layout();
   $(window).resize(function() {
     return layout();
   });
+*/
 
   $('.js-toggle-drawer').click(function() {
     return $('#drawer-main').slideToggle(animationLength);
@@ -59,6 +61,7 @@ jQuery(document).ready(function($) {
 
 });
 
+/*
 layout = function() {
   var footerHeight, headerHeight, windowHeight;
   windowHeight = $(window).height();
@@ -67,5 +70,5 @@ layout = function() {
   return mainContent.css({
     'min-height': (windowHeight - headerHeight - footerHeight) + 'px'
   });
-
 };
+*/
