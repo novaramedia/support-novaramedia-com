@@ -30,7 +30,6 @@ $font-leading-basic = 1.4em
 .video-holder
   position: relative
   padding-bottom: 56.25%
-  padding-top: 25px
   height: 0
   margin-bottom: $margin-small
   iframe
@@ -48,6 +47,13 @@ $font-leading-basic = 1.4em
 
 .support-form-submit
   padding: $margin-tiny
+
+// SOCIAL SHARES
+
+.fb-share-button
+  display: inline-block
+  vertical-align: super
+  margin-left: $margin-small
 
 // INPUT FORMS
 
@@ -99,4 +105,11 @@ $font-leading-basic = 1.4em
   #pagination
     margin: $margin-basic 0
 
+@media screen and (max-width: 460px)
 
+  #mce-EMAIL
+    padding: $margin-tiny
+    width: 55%
+
+  .support-form-submit
+    width: 20%

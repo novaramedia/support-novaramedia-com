@@ -1413,7 +1413,6 @@ img {
 .video-holder {
   position: relative;
   padding-bottom: 56.25%;
-  padding-top: 25px;
   height: 0;
   margin-bottom: 24px;
 }
@@ -1430,6 +1429,11 @@ img {
 }
 .support-form-submit {
   padding: 12px;
+}
+.fb-share-button {
+  display: inline-block;
+  vertical-align: super;
+  margin-left: 24px;
 }
 .support-form-holder {
   box-sizing: border-box;
@@ -1464,5 +1468,14 @@ img {
 @media screen and (max-width: 696px) {
   #pagination {
     margin: 24px 0;
+  }
+}
+@media screen and (max-width: 460px) {
+  #mce-EMAIL {
+    padding: 12px;
+    width: 55%;
+  }
+  .support-form-submit {
+    width: 20%;
   }
 }
