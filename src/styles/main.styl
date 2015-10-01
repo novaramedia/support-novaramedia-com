@@ -25,6 +25,36 @@ $font-leading-basic = 1.4em
     list-style: circle inside
     padding-left: $margin-tiny
 
+// RESPONSIVE VIDEO
+
+.video-holder
+  position: relative
+  padding-bottom: 56.25%
+  height: 0
+  margin-bottom: $margin-small
+  iframe
+    position: absolute
+    top: 0
+    left: 0
+    width: 100%
+    height: 100%
+
+// MAILCHIMP INPUTS
+
+#mce-EMAIL
+  padding: $margin-tiny
+  width: 75%
+
+.support-form-submit
+  padding: $margin-tiny
+
+// SOCIAL SHARES
+
+.fb-share-button
+  display: inline-block
+  vertical-align: super
+  margin-left: $margin-small
+
 // INPUT FORMS
 
 .support-form-holder
@@ -61,8 +91,7 @@ $font-leading-basic = 1.4em
   $margin-basic = ($gutter*3)
   $margin-large = ($gutter*5)
 
-  #pagination
-    margin: $margin-basic 0
+
 
 @media screen and (max-width: 696px)
 
@@ -72,7 +101,9 @@ $font-leading-basic = 1.4em
   $margin-basic = ($gutter*3)
   $margin-large = ($gutter*5)
 
-  #pagination
-    margin: $margin-basic 0
+  #mce-EMAIL
+    padding: $margin-tiny
+    width: 55%
 
-
+  .support-form-submit
+    width: 20%
