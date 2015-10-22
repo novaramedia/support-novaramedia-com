@@ -11,7 +11,7 @@ $font-leading-basic = 1.4em
   width: 55px
 
 #main-content
-  font-size: 1.7em
+  font-size: 2em
   line-height: $font-leading-basic
   font-weight: bold
   margin-top: $margin-small
@@ -91,8 +91,39 @@ $font-leading-basic = 1.4em
   $margin-basic = ($gutter*3)
   $margin-large = ($gutter*5)
 
-  #pagination
-    margin: $margin-basic 0
+  #main-content
+    font-size: 2em
+    line-height: $font-leading-basic
+    margin-top: $margin-small
+    .col24
+      max-width: (19*$col)+(18*$gutter)
+
+  .list
+    li
+      padding-left: $margin-tiny
+
+  // RESPONSIVE VIDEO
+
+  .video-holder
+    margin-bottom: $margin-small
+
+  // MAILCHIMP INPUTS
+
+  #mce-EMAIL
+    padding: $margin-tiny
+
+  .support-form-submit
+    padding: $margin-tiny
+
+  // SOCIAL SHARES
+
+  .fb-share-button
+    display: inline-block
+    vertical-align: super
+    margin-left: $margin-small
+
+  .support-form-holder
+    padding: $margin-small
 
 @media screen and (max-width: 696px)
 
@@ -102,14 +133,94 @@ $font-leading-basic = 1.4em
   $margin-basic = ($gutter*3)
   $margin-large = ($gutter*5)
 
-  #pagination
-    margin: $margin-basic 0
+  #main-content
+    font-size: 2em
+    line-height: $font-leading-basic
+    margin-top: $margin-small
+    .col24
+      max-width: (19*$col)+(18*$gutter)
 
-@media screen and (max-width: 460px)
+  .list
+    li
+      padding-left: $margin-tiny
+
+  // RESPONSIVE VIDEO
+
+  .video-holder
+    margin-bottom: $margin-small
+
+  // MAILCHIMP INPUTS
 
   #mce-EMAIL
     padding: $margin-tiny
     width: 55%
 
   .support-form-submit
+    padding: $margin-tiny
+
+  // SOCIAL SHARES
+
+  .fb-share-button
+    display: inline-block
+    vertical-align: super
+    margin-left: $margin-small
+
+  .support-form-holder
+    padding: $margin-small
+
+  .support-form-submit
     width: 20%
+
+@media screen and (max-width: 696px)
+
+  $gutter = 8px
+  $margin-tiny = ($gutter/2)
+  $margin-small = $gutter
+  $margin-basic = ($gutter*3)
+  $margin-large = ($gutter*5)
+
+  #header
+    .col12
+      width: 70%
+    .col12.u-align-right
+      width: 30%
+
+  #main-content
+    font-size: 1.5em
+    line-height: $font-leading-basic
+    margin-top: $margin-small
+    .col24
+      max-width: (19*$col)+(18*$gutter)
+
+  .list
+    li
+      padding-left: $margin-tiny
+
+  // RESPONSIVE VIDEO
+
+  .video-holder
+    margin-bottom: $margin-small
+
+  // MAILCHIMP INPUTS
+
+  #mce-EMAIL
+    padding: $margin-tiny
+    width: 55%
+
+  .support-form-submit
+    padding: $margin-tiny
+
+  // SOCIAL SHARES
+
+  .fb-share-button
+    display: inline-block
+    vertical-align: super
+    margin-left: $margin-small
+
+  .support-form-holder
+    padding: $margin-small
+    width: 100%
+    margin-bottom: $margin-small
+
+  .support-form-slider
+    width: 50%
