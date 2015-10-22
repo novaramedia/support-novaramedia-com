@@ -1412,12 +1412,12 @@ img {
 }
 #ticker-container {
   display: none;
+  margin-bottom: 24px;
 }
 #ticker-holder {
   position: relative;
   background-color: #fff;
   height: 1.5em;
-  margin-bottom: 24px;
 }
 #ticker {
   position: absolute;
@@ -1490,6 +1490,9 @@ img {
   .list li {
     padding-left: 4px;
   }
+  #ticker-container {
+    margin-bottom: 8px;
+  }
   .video-holder {
     margin-bottom: 8px;
   }
@@ -1519,6 +1522,9 @@ img {
   }
   .list li {
     padding-left: 4px;
+  }
+  #ticker-container {
+    margin-bottom: 8px;
   }
   .video-holder {
     margin-bottom: 8px;
@@ -1559,6 +1565,9 @@ img {
   }
   .list li {
     padding-left: 4px;
+  }
+  #ticker-container {
+    margin-bottom: 8px;
   }
   .video-holder {
     margin-bottom: 8px;
