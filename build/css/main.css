@@ -1410,6 +1410,24 @@ img {
   list-style: circle inside;
   padding-left: 12px;
 }
+#ticker-container {
+  display: none;
+}
+#ticker-holder {
+  position: relative;
+  background-color: #fff;
+  height: 1.5em;
+  margin-bottom: 24px;
+}
+#ticker {
+  position: absolute;
+  left: 0;
+  width: 0%;
+  -webkit-transition: width 0.9s;
+          transition: width 0.9s;
+  height: 1.5em;
+  background-color: #f00;
+}
 .video-holder {
   position: relative;
   padding-bottom: 56.25%;
