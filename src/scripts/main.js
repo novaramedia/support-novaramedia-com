@@ -8,7 +8,36 @@ animationLength = 200;
 
 mainContent = $('#main-content');
 
+var targetAmount = 10000;
+var $ticker = $('#ticker');
+
 jQuery(document).ready(function($) {
+
+  // TICKER
+
+  $ticker.css('width', '0%');
+
+  $.get('https://payment.novaramedia.com/api/total', null, function(data, textStatus) {
+
+
+    if (textStatus === 'success') {
+
+      var percent = parseFloat(data) / targetAmount;
+
+      if (percent > 1) {
+        percent = 1;
+      }
+
+      $('#ticker-container').slideDown(900, function() {
+        $ticker.css('width', (percent * 100) + '%');
+      });
+
+    }
+
+
+  }, 'json');
+
+  // IS LIVE
 
   $.getScript("http://tools.novaramedia.com/tool/novara_live/schedule.min.js", function() {
     if (isLive()) {
