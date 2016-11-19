@@ -1399,7 +1399,7 @@ img {
   font-size: 2em;
   line-height: 1.4em;
   font-weight: bold;
-  margin-top: 24px;
+  margin-top: 0;
 }
 #main-content .col24 {
   max-width: 1002px;
@@ -1482,7 +1482,6 @@ img {
   #main-content {
     font-size: 2em;
     line-height: 1.4em;
-    margin-top: 8px;
   }
   #main-content .col24 {
     max-width: 714px;
@@ -1515,7 +1514,6 @@ img {
   #main-content {
     font-size: 2em;
     line-height: 1.4em;
-    margin-top: 8px;
   }
   #main-content .col24 {
     max-width: 714px;
@@ -1558,7 +1556,6 @@ img {
   #main-content {
     font-size: 1.5em;
     line-height: 1.4em;
-    margin-top: 8px;
   }
   #main-content .col24 {
     max-width: 714px;
