@@ -15,6 +15,7 @@ jQuery(document).ready(function($) {
 
   // TICKER
 
+/*
   $ticker.css('width', '0%');
 
   $.get('https://payment.novaramedia.com/api/total', null, function(data, textStatus) {
@@ -36,6 +37,7 @@ jQuery(document).ready(function($) {
 
 
   }, 'json');
+*/
 
   // IS LIVE
 

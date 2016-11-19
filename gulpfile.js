@@ -16,7 +16,6 @@ var gulp = require('gulp'),
     uglify = require('gulp-uglify'),
 
     imagemin = require('gulp-imagemin'),
-    fontgen = require("gulp-fontgen");
 
     destinations = {
 		  js: 'build/js/',
@@ -55,7 +54,7 @@ gulp.task('styles', function() {
     .pipe(plumber())
     .pipe(stylus())
     .on('error', errorNotify)
-    .pipe(autoprefixer('last 2 version', 'safari 5', 'ie 8', 'ie 9', 'opera 12.1', 'ios 6', 'android 4'))
+    .pipe(autoprefixer('last 2 version'))
     .pipe(gulp.dest(destinations.css))
     .pipe(rename({suffix: '.min'}))
     .pipe(minifycss())
@@ -101,17 +100,6 @@ gulp.task('images', function () {
     .on('error', errorNotify)
     .pipe(gulp.dest(destinations.images))
 		.pipe(notify({ message: 'Images task complete' }));
-});
-
-/* FONTS */
-gulp.task('fonts', function () {
-    return gulp.src('src/fonts/*.*')
-    .pipe(cache('fonts'))
-    .pipe(fontgen({
-      dest: destinations.fonts
-		}))
-		.on('error', errorNotify)
-		.pipe(notify({ message: 'Fonts task complete' }));
 });
 
 /* WATCH */
